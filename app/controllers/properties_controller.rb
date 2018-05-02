@@ -1,5 +1,6 @@
 class PropertiesController < ApplicationController
   before_action :set_property, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
 
   def index
@@ -11,7 +12,7 @@ class PropertiesController < ApplicationController
   end
 
   def new
-    @property = Property.new
+    @property = current_user.properties.build
   end
 
   
@@ -20,7 +21,7 @@ class PropertiesController < ApplicationController
 
  
   def create
-    @property = Property.new(property_params)
+    @property = current_user.properties.build(property_params)
 
     respond_to do |format|
       if @property.save

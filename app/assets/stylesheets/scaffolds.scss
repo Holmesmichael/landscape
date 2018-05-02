@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
 body {
   background-color: #fff;
   color: #333;
@@ -5,6 +7,7 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  font-family: 'Josefin Sans', serif;
 }
 
 p, ol, ul, td {
@@ -55,6 +58,7 @@ div {
   background-color: red;
   display: table;
 }
+
 
 #error_explanation {
   width: 450px;

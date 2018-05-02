@@ -15,6 +15,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.3'
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 
 group :development, :test do
