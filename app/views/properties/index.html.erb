@@ -12,16 +12,18 @@
   </thead>
 
   <tbody>
-    <% @properties.each do |property| %>
-      <tr>
-        <td><%= property.content %></td>
-        <td><%= property.user.email %></td>
-        <td><%= link_to 'Show', property %></td>
-        <% if property.user == current_user  %>
-        <td><%= link_to 'Edit', edit_property_path(property) %></td>
-        <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-      </tr>
+      <% if @properties.present? %>
+      <% @properties.each do |property| %>
+        <tr>
+          <td><%= property.content %></td>
+          <td><%= property.user.email %></td>
+          <td><%= link_to 'Show', property %></td>
+          <% if property.user == current_user  %>
+          <td><%= link_to 'Edit', edit_property_path(property) %></td>
+          <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% end %>
+        </tr>
+    <% end %>
     <% end %>
   </tbody>
 </table>
