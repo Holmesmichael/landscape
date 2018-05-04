@@ -2,7 +2,22 @@
 @import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 
-/* universal */
+/* -----------  
+    universal    
+   -----------  */
+
+#video-background {
+    /*  making the video fullscreen  */
+      position: fixed;
+      right: 0; 
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      width: auto; 
+      height: auto;
+      z-index: -100;
+      opacity: 0.8;
+    }
 
 body {
     padding-top: 75px;
@@ -27,7 +42,9 @@ textarea {
 }
 
 
-/* typography */
+/* -----------  
+    typography   
+   -----------  */
 h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 }
@@ -54,7 +71,41 @@ p {
     line-height: 1.7em;
 }
 
-/* footer */
+
+/* -----------  
+       nav    
+   -----------  */
+
+#header_id { 
+    position: absolute;
+    background-color:#D5BE92;
+    opacity: 0.8; 
+    left: 2px;
+    right: 10px;
+
+    margin: 15px 15px;
+}
+
+/* nav text */ 
+.navigation {
+    color: #777;
+}
+
+.navigation ul {
+    float: right;
+    list-style: none;
+}
+
+.navigation ul li {
+    float: left;
+    margin-left: 10px;
+}
+
+
+
+/* -----------  
+      footer    
+   -----------  */
 
 footer {
     margin-top: 40px;

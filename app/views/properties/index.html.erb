@@ -1,33 +1,45 @@
 <p id="notice"><%= notice %></p>
 
+<% link_to 'properties/squarefoot' %>
+
 <h1>Properties</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Property Details</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-      <% if @properties.present? %>
-      <% @properties.each do |property| %>
-        <tr>
-          <td><%= property.content %></td>
-          <td><%= property.user.email %></td>
-          <td><%= link_to 'Show', property %></td>
-          <% if property.user == current_user  %>
-          <td><%= link_to 'Edit', edit_property_path(property) %></td>
-          <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          <% end %>
-        </tr>
-    <% end %>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
 <%= link_to 'New Property', new_property_path %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2" style="background-color: pink;">
+    <table>
+      <thead>
+        <tr>
+          <th>Property Details</th>
+          <th>User</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+        <br>
+        <tbody>
+          <% if @properties.present? %>
+            <% @properties.each do |property| %>
+              <tr>
+                <td><%= property.content %></td>
+                <td><%= property.user.email %></td>
+                <td><%= link_to 'Show', property %></td>
+                <% if property.user == current_user  %>
+                <td><%= link_to 'Edit', edit_property_path(property) %></td>
+                <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <% end %>
+              </tr>
+          <% end %>
+          <% end %>
+        </tbody>
+    </table>
+    </div>
+    <div class="col-md-8" style="background-color: yellow;">
+      <%= render 'properties/squarefoot' %>
+    </div>
+    <div class="col-md-2" style="background-color: green;">
+      One of three columns
+    </div>
+  </div>
+</div>

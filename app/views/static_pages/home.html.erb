@@ -1,25 +1,46 @@
-<!-- Stack the columns on mobile by making one full-width and the other half-width -->
-<div class="row">
-  <div class="col-12 col-md-8">.col-12 .col-md-8</div>
-    <div class="center jumbotron">
-        <h1>NatureScape</h1>
 
-        <h2>Lawn and Landscaping Care</h2>
+<div class="container">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row">
+        <div class="col-12 col-md-12">
+                    <h1>NatureScape</h1>
 
-        <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
+                    <h2>Lawn and Landscaping Care</h2>
+
+                    <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
+        </div>
     </div>
-  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-</div>
 
-<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-<div class="row">
-  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-</div>
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+    <div class="col-6 col-md-4"><div class="center jumbotron">
+                    <h2>Left first row</h2>
 
-<!-- Columns are always 50% wide, on mobile and desktop -->
-<div class="row">
-  <div class="col-6 col-md-6">.col-6</div>
-  <div class="col-6 col-md-6">.col-6</div>
+                    
+            </div></div>
+    <div class="col-6 col-md-4">
+                    <h2>About Us </h2>
+ <p style="font-size: 0.9em;">Your Naturescape specialist is committed to making you happy with our service and your lawn and landscape. If you are not completely satisfied with the results of our services or you have any questions or concerns, please call your area branch office and we will be happy to take care of them free of charge within 72 hours.
+                </p>
+
+            </div>
+    <div class="col-6 col-md-4"><div class="center jumbotron">
+                    <h2>Right first row</h2>
+
+    
+            </div></div>
+    </div>
+
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row">
+    <div class="col-6 col-md-6"><div class="center jumbotron">
+                    <h2>left second row</h2>
+
+                   
+            </div></div>
+    <div class="col-6 col-md-6"><div class="center jumbotron">
+                    <h2>right second row</h2>
+
+            </div></div>
+    </div>
 </div>

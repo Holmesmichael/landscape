@@ -1,6 +1,11 @@
-  <header class="navbar navbar-fixed-top">
+<div class="container">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row">
+        <div class="col-12 col-md-12">
+
+  <header id="header_id" class="navbar navbar-fixed-top">
     <div class="container">
-      <nav>
+      <nav class="navigation">
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Home", root_path  %></li>
           <% if user_signed_in? %>
@@ -12,4 +17,6 @@
         </ul>
       </nav>
     </div>
-  </header>
+  </header>                
+        </div>
+    </div>
