@@ -2,6 +2,9 @@ Project name:  Naturescape
 
 Description:  Website makeover for client.  Website has a functioning Front-end and basic Back-end.  
 
+
+
+
 Technologies used:
 
 Front End               Backend    
@@ -12,9 +15,17 @@ jQuery
 JavaScript
 Bootstrap
 
+
+
+
+
 Prerequisities to run web application:
 Ruby V 2.2 or later
 Rails 5.0
+
+
+
+
 
 Operation:
 1. Start the Rails server on your local machine.
