@@ -1,24 +1,25 @@
-# README
+Project name:  Naturescape
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Description:  Website makeover for client.  Website has a functioning Front-end and basic Back-end.  
 
-Things you may want to cover:
+Technologies used:
 
-* Ruby version
+Front End               Backend    
 
-* System dependencies
+HTML                    Ruby on Rails
+CSS                     Ruby
+jQuery
+JavaScript
+Bootstrap
 
-* Configuration
+Prerequisities to run web application:
+Ruby V 2.2 or later
+Rails 5.0
 
-* Database creation
+Operation:
+1. Start the Rails server on your local machine.
+2. Enjoy browsing the website
+3. Call Naturescape to get a quote with a great company.
+4. Hire a dev, like me.
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
