@@ -31,6 +31,6 @@ Operation:
 1. Start the Rails server on your local machine.
 2. Enjoy browsing the website
 3. Call Naturescape to get a quote with a great company.
-4. Hire a dev, like me.
+
 
 
